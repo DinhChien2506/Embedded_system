@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"abs_embedded\startup_stm32f103xb.o"
+"abs_embedded\main.o"
+"abs_embedded\stm32f1xx_it.o"
+"abs_embedded\stm32f1xx_hal_msp.o"
+"abs_embedded\stm32f1xx_hal_gpio_ex.o"
+"abs_embedded\stm32f1xx_hal_tim.o"
+"abs_embedded\stm32f1xx_hal_tim_ex.o"
+"abs_embedded\stm32f1xx_hal.o"
+"abs_embedded\stm32f1xx_hal_rcc.o"
+"abs_embedded\stm32f1xx_hal_rcc_ex.o"
+"abs_embedded\stm32f1xx_hal_gpio.o"
+"abs_embedded\stm32f1xx_hal_dma.o"
+"abs_embedded\stm32f1xx_hal_cortex.o"
+"abs_embedded\stm32f1xx_hal_pwr.o"
+"abs_embedded\stm32f1xx_hal_flash.o"
+"abs_embedded\stm32f1xx_hal_flash_ex.o"
+"abs_embedded\stm32f1xx_hal_exti.o"
+"abs_embedded\system_stm32f1xx.o"
+--strict --scatter "ABS_Embedded\ABS_Embedded.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ABS_Embedded.map" -o ABS_Embedded\ABS_Embedded.axf
